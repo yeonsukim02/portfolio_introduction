@@ -1,12 +1,24 @@
-BODY > * {min-width: 1920px;}
+body > * {min-width: 1920px;}
+/* 스와이퍼 슬라이드 공통 */
+.portfolio{height:100vh;}
+.portfolio .swiper-slide{height:100vh;}
+main .profile_li{background-color: #F9F5F2;}
+main .tosspay_li{background-color: #EFE8E5;}
+main .xexymixx_li{background-color: #EFE8E5;}
+main .snp_li{background-color: #F9F5F2;}
+main .lottehotel_li{background-color: #F9F5F2;}
+main .page_li{background-color: #EFE8E5;}
+main .banner_li{background-color: #F9F5F2;}
+main .sns_li{background-color: #F9F5F2;}
 /* 헤더 */
 header{
     background-color: transparent;
-    width: 1920px;  height: 80px;
+    width: 100%;  height: 80px;
     display: flex;
+    align-items: center;
     position: fixed;
     z-index: 100;
-    padding: 24px 60px;
+    padding-left: 60px;
 }
 header nav{position: relative;}
 header nav .gnb{display: flex;}
@@ -18,7 +30,9 @@ header nav .gnb > li:last-child{margin: 0;}
 header nav .gnb > li > a{
     color: #fff;
     font-size: 1.0rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.02em;
+    font-family: "Noto Serif", serif;
+    font-weight: 700;
 }
 /* 비주얼 */
 main{}
@@ -30,6 +44,7 @@ main .intro p{
     color: #57160B;
     font-size: 6.25rem;
     padding: 360px 0 360px 60px;
+    letter-spacing: 0.1em;
 }
 main .intro span{
     font-family: "Noto Serif", serif;
@@ -42,11 +57,11 @@ main .profile{
     background-color: #F9F5F2;
     display: flex;
     flex-direction: column;
-    padding: 100px 0;
+    padding-top: 100px;/*  */
 }
 main h1{
-    font-weight: 300;
-    letter-spacing: 0.02em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
     font-size: 2.50rem;
     font-family: "Noto Serif", serif;
     color: #57160B;
@@ -55,7 +70,6 @@ main h1{
 main .profile .pro{
     text-align: initial;
     padding-left: 80px;
-    /* padding: 25px 0 20px 80px; */
     /* background-color: red; */
 }
 main .profile .pro_cont{
@@ -79,6 +93,7 @@ main .profile .pro_cont .pro_txt h2{
     color: #57160B;
     padding-bottom: 20px;
     padding-top: 60px;
+    letter-spacing: 0.08em;
 }
 main .profile .pro_cont .pro_txt .about{padding-top: 0;}
 main .profile .pro_cont .pro_txt ul{}
@@ -93,6 +108,9 @@ main .profile .pro_cont .pro_txt .txt01{
     width: 700px;
     border-left: 1px solid #57160B; 
     padding-left: 20px;
+}
+main .profile .pro_txt .txt01 li:nth-child(-n+4){
+    padding-bottom: 20px;
 }
 main .profile .pro_cont .pro_txt .txt01 .title{
     width: 120px;
@@ -152,10 +170,9 @@ main .profile .pro_txt .txt04 li img{
 }
 /* 공통, 웹 */
 main .web{
-    padding: 150px 0;
-    background-color: #EFE8E5;
     display: flex;
     flex-direction: column;
+    padding-top: 150px;/*  */
 }
 main .web h1{}
 main .web .web_cont{
@@ -174,11 +191,9 @@ main .web .web_cont .web_txt{
     justify-content: center;
 }
 main .web .web_cont .web_txt h2{
-    font-weight: 300;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.1em;
     font-size: 2.50rem;
     color: #57160B;
-    text-decoration: underline;
 }
 main .web .web_cont ul{}
 main .web .web_cont ul li{}
@@ -214,15 +229,23 @@ main .web .web_cont .web_txt .btn a{
     font-size: 1.25rem;
     margin-right: 20px;
 }
+main .web .web_cont .web_txt .btn .btn01:hover{
+    background-color: #57160B;
+}
+main .web .web_cont .web_txt .btn .btn02:hover{
+    background-color: #57160B;
+}
+main .web .web_cont .web_txt .btn .btn03:hover{
+    background-color: #57160B;
+}
 /* 잭시믹스, 롯데호텔 */
-main .portfolio_wrap .xexymixx .xexymixx_cont{flex-direction: row-reverse;}
-main .portfolio_wrap .lottehotel .lottehotel_cont{flex-direction: row-reverse;}
+main .portfolio .xexymixx .xexymixx_cont{flex-direction: row-reverse;}
+main .portfolio .lottehotel .lottehotel_cont{flex-direction: row-reverse;}
 /* 공통, 디자인*/
 main .design{
-    background-color: #EFE8E5;
     display: flex;
     flex-direction: column;
-    padding: 100px 0;
+    padding-top: 100px;/*  */
 }
 main .design h1{}
 main .design p{
@@ -247,8 +270,15 @@ main .page .page_wrap{padding-top: 0;}
 main .banner .banner_wrap{flex-direction: column; align-items: center;}
 main .banner .banner_wrap a{margin-bottom: 20px;}
 main .banner .banner_wrap a:nth-child(3){margin-bottom: 0;}
-/* SNS */
-main .sns{padding-bottom: 200px;}
+main .banner .banner_wrap a:hover{
+        transform: scale(1.1);
+        transition: transform .5s;
+}
+/* sns */
+main .sns .sns_wrap a:hover{
+    transform: scale(1.1);
+    transition: transform .5s;
+}
 /* 푸터 */
 footer{
     background: url(../img/footer.png) no-repeat;

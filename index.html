@@ -17,15 +17,12 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
-    <style>
-        .portfolio_wrap {height:100vh;}
-        .portfolio_wrap .swiper-slide {height:100vh;}
-    </style>
 </head>
 <body>
     <header>
         <nav>
             <ul class="gnb">
+                <li><a href="#intro_sub">HOME</a></li>
                 <li><a href="#profile_sub">PROFILE</a></li>
                 <li><a href="#web_sub">WEB</a></li>
                 <li><a href="#page_sub">DETAIL PAGE</a></li>
@@ -35,10 +32,10 @@
         </nav>
     </header>
     <main>
-        <div class="swiper portfolio_wrap">
+        <div class="swiper portfolio">
             <div class="swiper-wrapper">
                 <div class="swiper-slide intro_li">
-                    <div class="intro">
+                    <div class="intro" id="intro_sub">
                         <!-- 백그라운드 이미지 -->
                         <p>KIM YEONSU'S<br><span>PORTFOLIO</span></p>
                     </div>
@@ -47,7 +44,7 @@
                     <div class="profile" id="profile_sub">
                         <h1 class="pro">01 PROFILE</h1>
                         <div class="pro_cont">
-                            <div class="pro_img"><img src="./img/profile.png" alt=""></div>
+                            <div class="pro_img"><img src="./img/profile02.png" alt=""></div>
                             <div class="pro_txt">
                                     <h2 class="about">ABOUT ME</h2>
                                     <ul class="txt01">
@@ -98,11 +95,11 @@
                                 <ul class="txt">
                                     <li>
                                         <h3>사이트명</h3>
-                                        <p>토스페이몰 (종합쇼핑)</p>
+                                        <p>토스페이몰 (종합 쇼핑몰)</p>
                                     </li>
                                     <li>
                                         <h3>제작기간</h3>
-                                        <p>24년 08월 00일 ~ 00일 (7일, 49시간)</p>
+                                        <p>24년 09월 16일 ~ 28일 (13일, 78시간)</p>
                                     </li>
                                     <li>
                                         <h3>제작페이지</h3>
@@ -114,9 +111,9 @@
                                     </li>
                                 </ul>
                                 <div class="btn">
-                                    <a href="#" target="_blank">기획서</a>
-                                    <a href="#" target="_blank">프로토타입</a>
-                                    <a href="https://yeonsukim02.github.io/tosspaymall/" target="_blank">최종결과</a>
+                                    <a href="#" class="btn01" target="_blank">기획서</a>
+                                    <a href="#" class="btn02" target="_blank">Figma 결과</a>
+                                    <a href="https://yeonsukim02.github.io/tosspaymall/" class="btn03" target="_blank">최종결과</a>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +122,7 @@
                 <div class="swiper-slide xexymixx_li">
                     <div class="xexymixx web" id="web_sub">
                         <div class="xexymixx_cont web_cont">
-                            <div class="web_img"><img src="./img/m01.png" alt=""></div>
+                            <div class="web_img"><img src="./img/m02.png" alt=""></div>
                             <div class="web_txt">
                                 <h2>XEXYMIXX</h2>
                                 <ul class="txt">
@@ -135,7 +132,7 @@
                                     </li>
                                     <li>
                                         <h3>제작기간</h3>
-                                        <p>24년 08월 00일 ~ 00일 (7일, 49시간)</p>
+                                        <p>24년 09월 02일 ~ 14일 (13일, 78시간)</p>
                                     </li>
                                     <li>
                                         <h3>제작페이지</h3>
@@ -147,9 +144,9 @@
                                     </li>
                                 </ul>
                                 <div class="btn">
-                                    <a href="#">기획서</a>
-                                    <a href="#">프로토타입</a>
-                                    <a href="#">최종결과</a>
+                                    <a href="#" class="btn01" target="_blank">기획서</a>
+                                    <a href="#" class="btn02" target="_blank">Figma 결과</a>
+                                    <a href="#" class="btn03" target="_blank">최종 결과</a>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +155,7 @@
                 <div class="swiper-slide snp_li">
                     <div class="snp web" id="web_sub">
                         <div class="snp_cont web_cont">
-                            <div class="web_img"><img src="./img/m01.png" alt=""></div>
+                            <div class="web_img"><img src="./img/m03.png" alt=""></div>
                             <div class="web_txt">
                                 <h2>SNP</h2>
                                 <ul class="txt">
@@ -168,7 +165,7 @@
                                     </li>
                                     <li>
                                         <h3>제작기간</h3>
-                                        <p>24년 08월 00일 ~ 00일 (7일, 49시간)</p>
+                                        <p>24년 08월 25일 ~ 31일 (7일, 49시간)</p>
                                     </li>
                                     <li>
                                         <h3>제작페이지</h3>
@@ -180,9 +177,9 @@
                                     </li>
                                 </ul>
                                 <div class="btn">
-                                    <a href="#">기획서</a>
-                                    <a href="#">프로토타입</a>
-                                    <a href="#">최종결과</a>
+                                    <a href="#" class="btn01" target="_blank">기획서</a>
+                                    <a href="#" class="btn02" target="_blank">Figma 결과</a>
+                                    <a href="#" class="btn03" target="_blank">최종결과</a>
                                 </div>
                             </div>
                         </div>
@@ -191,7 +188,7 @@
                 <div class="swiper-slide lottehotel_li">
                     <div class="lottehotel web" id="web_sub">
                         <div class="lottehotel_cont web_cont">
-                            <div class="web_img"><img src="./img/m01.png" alt=""></div>
+                            <div class="web_img"><img src="./img/m04.png" alt=""></div>
                             <div class="web_txt">
                                 <h2>LOTTEHOTEL</h2>
                                 <ul class="txt">
@@ -201,7 +198,7 @@
                                     </li>
                                     <li>
                                         <h3>제작기간</h3>
-                                        <p>24년 08월 00일 ~ 00일 (7일, 49시간)</p>
+                                        <p>24년 08월 18일 ~ 24일 (7일, 49시간)</p>
                                     </li>
                                     <li>
                                         <h3>제작페이지</h3>
@@ -213,9 +210,9 @@
                                     </li>
                                 </ul>
                                 <div class="btn">
-                                    <a href="#" >기획서</a>
-                                    <a href="#">프로토타입</a>
-                                    <a href="#" target="_blank">최종결과</a>
+                                    <a href="#" class="btn01" target="_blank">기획서</a>
+                                    <a href="#" class="btn02" target="_blank">Figma 결과</a>
+                                    <a href="#" class="btn03" target="_blank">최종결과</a>
                                 </div>
                             </div>
                         </div>
