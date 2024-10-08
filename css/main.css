@@ -256,14 +256,10 @@ main .design p{
 main .design a img{}
 main .design .design_wrap{
     padding-top: 200px;
-    width: 90%;
+    width: 80%; height: 600px;
     margin: 0 auto;
 }
-main .design .design_wrap a{
-    display: inline-block;
-    margin-right: 20px;
-}
-main .design .design_wrap a img{width: 100%;}
+main .design .design_wrap img{width: 100%;}
 /* 상세페이지 */
 main .page .page_wrap{padding-top: 0;}
 /* 배너 */
