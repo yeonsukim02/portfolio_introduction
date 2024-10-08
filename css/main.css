@@ -255,9 +255,9 @@ main .design p{
 }
 main .design a img{}
 main .design .design_wrap{
-    display: flex;
-    justify-content: center;
-    padding-top: 100px;
+    padding-top: 200px;
+    width: 90%;
+    margin: 0 auto;
 }
 main .design .design_wrap a{
     display: inline-block;
@@ -267,7 +267,7 @@ main .design .design_wrap a img{width: 100%;}
 /* 상세페이지 */
 main .page .page_wrap{padding-top: 0;}
 /* 배너 */
-main .banner .banner_wrap{flex-direction: column; align-items: center;}
+main .banner .banner_wrap{padding-top: 250px;}
 main .banner .banner_wrap a{margin-bottom: 20px;}
 main .banner .banner_wrap a:nth-child(3){margin-bottom: 0;}
 main .banner .banner_wrap a:hover{
@@ -275,6 +275,7 @@ main .banner .banner_wrap a:hover{
         transition: transform .5s;
 }
 /* sns */
+main .sns .sns_wrap{}
 main .sns .sns_wrap a:hover{
     transform: scale(1.1);
     transition: transform .5s;
