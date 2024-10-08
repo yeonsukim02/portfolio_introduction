@@ -16,19 +16,19 @@ const portfolio = new Swiper('.portfolio',{
 const page_wrap = new Swiper(".page_wrap",{
     slidesPerView: 2,
     spaceBetween: 20,
-    autoplay: {delay:2000},
+    autoplay: {delay:3000},
     loop: true,
 });
 const banner_wrap = new Swiper(".banner_wrap",{
     slidesPerView: 2,
     spaceBetween: 20,
-    autoplay: {delay:2000},
+    autoplay: {delay:3000},
     loop: true,
 });
 const sns_wrap = new Swiper(".sns_wrap",{
     slidesPerView: 4,
     spaceBetween: 20,
-    autoplay: {delay:2000},
+    autoplay: {delay:3000},
     loop: true,
 });
 

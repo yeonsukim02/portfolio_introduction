@@ -256,25 +256,28 @@ main .design p{
 main .design a img{}
 main .design .design_wrap{
     padding-top: 200px;
-    width: 80%; height: 600px;
     margin: 0 auto;
+    width: 90%; height: 600px;
 }
 main .design .design_wrap img{width: 100%;}
 /* 상세페이지 */
-main .page .page_wrap{padding-top: 0;}
+main .page .page_wrap{
+    padding-top: 0;
+    width: 80%; height: 600px;
+}
 /* 배너 */
 main .banner .banner_wrap{padding-top: 250px;}
 main .banner .banner_wrap a{margin-bottom: 20px;}
 main .banner .banner_wrap a:nth-child(3){margin-bottom: 0;}
-main .banner .banner_wrap a:hover{
-        transform: scale(1.1);
-        transition: transform .5s;
+main .banner .banner_wrap .swiper-slide:hover{
+    transform: scale(1.1);
+    transition: transform .9s;
 }
 /* sns */
 main .sns .sns_wrap{}
-main .sns .sns_wrap a:hover{
+main .sns .sns_wrap .swiper-slide:hover{
     transform: scale(1.1);
-    transition: transform .5s;
+    transition: transform .9s;
 }
 /* 푸터 */
 footer{
