@@ -10,13 +10,21 @@
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script/common.js" defer></script>
-    <script src="./script/main.js" defer></script>
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
+    <style>
+        .detail_big {
+            position:fixed; left:0; top:0; z-index:999; background:rgba(0,0,0,0.5);
+            width:100%; height:100vh; overflow-y:auto;
+            text-align:center;
+            display:none;
+        }
+        .detail_big img {width:800px;}
+    </style>
 </head>
 <body>
     <header>
@@ -113,7 +121,7 @@
                                 <div class="btn">
                                     <a href="https://www.figma.com/proto/m4IEtMKJcPgZjwn0cnml52/%EA%B8%B0%ED%9A%8D%EC%84%9C_%ED%86%A0%EC%8A%A4%ED%8E%98%EC%9D%B4?page-id=0%3A1&node-id=1-108&node-type=frame&viewport=800%2C410%2C0.04&t=x6EAlcVl4cZt75sg-1&scaling=contain&content-scaling=fixed" class="btn01" target="_blank">기획서</a>
                                     <a href="https://www.figma.com/design/HOL4WqGIFb7NDXPjwlfLEZ/01-%ED%86%A0%EC%8A%A4%ED%8E%98%EC%9D%B4?node-id=0-1&t=AGu685DbvE0e93Xm-1" class="btn02" target="_blank">Figma 결과</a>
-                                    <a href="https://yeonsukim02.github.io/tosspaymall/" class="btn03" target="_blank">최종결과</a>
+                                    <a href="https://yeonsukim02.github.io/tosspaymall/" class="btn03" target="_blank">최종 결과</a>
                                 </div>
                             </div>
                         </div>
@@ -144,9 +152,9 @@
                                     </li>
                                 </ul>
                                 <div class="btn">
-                                    <a href="#" class="btn01" target="_blank">기획서</a>
-                                    <a href="https://www.figma.com/proto/ur70k60nzryZHDNAOLNOAV/02-%EC%A0%9D%EC%8B%9C%EB%AF%B9%EC%8A%A4?page-id=0%3A1&node-id=78-2&node-type=frame&viewport=1045%2C366%2C0.15&t=aBLDqctFg97VVYu6-1&scaling=min-zoom&content-scaling=fixed" class="btn02" target="_blank">Figma 결과</a>
-                                    <!-- <a href="#" class="btn03" target="_blank">최종 결과</a> -->
+                                    <!-- <a href="#" class="btn01" target="_blank">기획서</a> -->
+                                    <a href="https://www.figma.com/proto/ur70k60nzryZHDNAOLNOAV/02-%EC%A0%9D%EC%8B%9C%EB%AF%B9%EC%8A%A4?page-id=0%3A1&node-id=300-29&node-type=frame&viewport=1342%2C249%2C0.11&t=U0ZX5pxQeLOeHeTe-1&scaling=min-zoom&content-scaling=fixed" class="btn02" target="_blank">Figma 결과</a>
+                                    <a href="https://yeonsukim02.github.io/xexymixx/" class="btn03" target="_blank">최종 결과</a>
                                 </div>
                             </div>
                         </div>
@@ -177,9 +185,9 @@
                                     </li>
                                 </ul>
                                 <div class="btn">
-                                    <a href="#" class="btn01" target="_blank">기획서</a>
+                                    <!-- <a href="#" class="btn01" target="_blank">기획서</a> -->
                                     <a href="https://www.figma.com/proto/N8Tx8vJqkTbcGUGQghZDSD/03-snp?page-id=0%3A1&node-id=28-826&node-type=canvas&viewport=-1763%2C69%2C0.09&t=GTtCxITioIR9bfiu-1&scaling=min-zoom&content-scaling=fixed" class="btn02" target="_blank">Figma 결과</a>
-                                    <!-- <a href="#" class="btn03" target="_blank">최종결과</a> -->
+                                    <!-- <a href="#" class="btn03" target="_blank">최종 결과</a> -->
                                 </div>
                             </div>
                         </div>
@@ -210,9 +218,9 @@
                                     </li>
                                 </ul>
                                 <div class="btn">
-                                    <a href="#" class="btn01" target="_blank">기획서</a>
+                                    <!-- <a href="#" class="btn01" target="_blank">기획서</a> -->
                                     <a href="https://www.figma.com/proto/EXh1O6vIElZRQL1YQYwuts/04-%EB%A1%AF%EB%8D%B0%ED%98%B8%ED%85%94?page-id=0%3A1&node-id=1-15&node-type=frame&viewport=607%2C487%2C0.08&t=aOY2SZUEREVZ4uWY-1&scaling=min-zoom&content-scaling=fixed" class="btn02" target="_blank">Figma 결과</a>
-                                    <!-- <a href="#" class="btn03" target="_blank">최종결과</a> -->
+                                    <!-- <a href="#" class="btn03" target="_blank">최종 결과</a> -->
                                 </div>
                             </div>
                         </div>
@@ -224,27 +232,12 @@
                         <p><img src="./img/flower.png" alt="꽃 이미지">클릭하면 크게 보실 수 있습니다.</p>
                         <div class="swiper page_wrap design_wrap">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide modal">
-                                    <div class="modal_content">
-                                        <a href="#"><img src="./img/page01.png" alt="상세페이지 디자인"></a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide modal">
-                                    <div class="modal_content">
-                                        <a href="#"><img src="./img/page02.png" alt="상세페이지 디자인"></a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide modal">
-                                    <div class="modal_content">
-                                        <a href="#"><img src="./img/page01.png" alt="상세페이지 디자인"></a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide modal">
-                                    <div class="modal_content">
-                                        <a href="#"><img src="./img/page02.png" alt="상세페이지 디자인"></a>
-                                    </div>
-                                </div>
+                                <div class="swiper-slide modal"><img src="./img/page01.png" alt="상세페이지 디자인"></div>
+                                <div class="swiper-slide modal"><img src="./img/page02.png" alt="상세페이지 디자인"></div>
                             </div>
+                        </div>
+                        <div class="detail_big" title="아무 곳이나 클릭하면 꺼져요!">
+                            <img src="./img/page01.png" alt="">
                         </div>
                     </div>
                 </div>

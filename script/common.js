@@ -31,3 +31,22 @@ const sns_wrap = new Swiper(".sns_wrap",{
     autoplay: {delay:2000},
     loop: true,
 });
+
+        //details
+        const details_modal = document.querySelectorAll('.design_wrap .modal')
+        const detail_big = document.querySelector('.detail_big')
+        //console.log(details_modal[0].children[0].src)
+        //console.log(detail_big.children[0].src)
+
+        for(let i of details_modal){
+            i.addEventListener('click',function(){
+                detail_big.children[0].src = this.children[0].src
+                detail_big.style.display = 'block'
+                portfolio.disable(); //스와이퍼의 스크롤과 충돌되는 것 처리
+            })
+        }
+
+        detail_big.addEventListener('click',function(){
+            detail_big.style.display = 'none'
+            portfolio.enable(); //스와이퍼의 스크롤과 충돌되는 것 처리
+        })
