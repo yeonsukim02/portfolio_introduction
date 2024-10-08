@@ -4,12 +4,12 @@ const portfolio = new Swiper('.portfolio',{
     on: {
         slideChange: function () {
             const currentSlide = this.activeIndex;
-            if (currentSlide === 0) {
+/*             if (currentSlide === 0) {
                 document.querySelector('header').style.backgroundColor = 'transparent';
             }
             else if (currentSlide === 1) {
-                document.querySelector('header').style.backgroundColor = '#B22B15';
-            }
+                document.querySelector('header').style.backgroundColor = '#B32E18';
+            } */
         }
     }
 });
