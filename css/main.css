@@ -1,352 +1,202 @@
+/* 헤더 */
+header{
+    background-color: transparent;
+    width: 1920px;  height: 80px;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    padding: 24px 60px;
+}
+header nav{position: relative;}
+header nav .gnb{display: flex;}
+header nav .gnb > li{
+    margin-right: 55px;
+    position: relative;
+}
+header nav .gnb > li:last-child{margin: 0;}
+header nav .gnb > li > a{
+    color: #fff;
+    font-size: 1.0rem;
+    letter-spacing: 2px;
+}
+/* 비주얼 */
+main{}
 main .visual{
-    position: relative;
+    height: 90vh;
+    background: url(../img/main.png) no-repeat;
 }
-main .visual .visual_all{
+main .visual p{
+    font-family: "Noto Serif", serif;
+    color: #57160B;
+    font-size: 6.25rem;
+    padding: 360px 0 360px 60px;
+}
+main .visual span{
+    font-family: "Noto Serif", serif;
+    color: #57160B;
+    font-size: 6.25rem;
+    padding-left: 300px; padding-top: 35px;
+}
+/* 프로필 */
+main .profile{ 
     width: 100%;
-    height: 100vh;
-    padding-top: 80px;
-}
-main .visual_all .swiper-button-next,
-main .visual_all .swiper-button-prev {
-    color: #fff
-}
-main .visual_all .swiper-scrollbar {
-    bottom: 65px;
-}
-main .visual .visual_all > .swiper-slide{}
-main .visual .visual_all > .visual_li{}
-main .visual .visual_all > .swiper-slide img{width: 100%;}
-main .visual .visual_txt_wrap{
-    position: absolute;
-    left: 260px; bottom: 200px;
-    z-index: 200;
-}
-main .visual .visual_txt_wrap h1{
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: #fff;
-    padding-bottom: 35px;
-}
-main .visual .visual_txt_wrap a{
-    border: 1px solid #fff;
-    border-radius: 25px;
-    color: #fff;
-    font-weight: 600;
-    padding: 10px 50px;
-}
-/* 랭킹 섹션 */
-main .rank_wrap{
-    margin-left: 110px;
+    line-height: 970px;
     display: flex;
-    /* background-color: beige; */
+    flex-flow: row wrap; 
+    background-color: #F9F5F2;
 }
-main .rank_wrap .rank_title_wrap{
-    width: 500px;
-    margin-right: 50px;
-    /* background-color: green; */
-}
-main .rank_wrap .rank_title_wrap h1{
-    margin-bottom: 50px;
-}
-main .rank_wrap .rank_title_wrap a{
-    font-size: 1.13rem;
+main .profile h1{
     font-weight: 300;
-    border: 1px solid #000;
-    /* background-color: blue; */
-    padding: 20px 60px;
+    letter-spacing: 0.02em;
+    font-size: 40px;
+    font-family: "Noto Serif", serif;
+    color: #57160B;
+    padding: 50px 0 20px 80px;
 }
-main .rank_wrap .rank_title_wrap .rank_arrow{
-    width: 145px;
-    height: 50px;
-    /* background-color: red; */
-    position: relative;
-    margin-top: 50px;
-}
-main .rank_wrap .rank_title_wrap .rank_arrow img{width: 100%;}
-main .rank_wrap .rank_title_wrap .swiper-button-prev::after{display: none;}
-main .rank_wrap .rank_title_wrap .swiper-button-next::after{display: none;}
-main .rank_wrap .rank_title_wrap .swiper-button-prev{
-    color: #000;
-    width: 48px;
-    height: 14px;
-    background: url(../img/arrow_left.png) no-repeat;
-}
-main .rank_wrap .rank_title_wrap .swiper-button-next {
-    color: #000;
-    width: 48px;
-    height: 14px;
-    background: url(../img/arrow_right.png) no-repeat;
-}
-main .rank_wrap .rank_product_wrap{
-    width: calc(100%-300px);
-    /* background-color: yellow;  */
-}
-main .rank_wrap .rank_product_wrap .rank_product{}
-main .rank_wrap .rank_product_wrap .rank_product h2{
-    font-size: 1.88rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-main .rank_wrap .rank_product_wrap .rank_product a{width: 100%;}
-main .rank_wrap .rank_product_wrap .rank_product a img{
-    width: 300px;
-    height: 400px;
-    border: 1px solid #000;
-}
-/* 공통 */
-main h1{
-    font-size: 1.88rem;
-    font-weight: 800;
-}
-main .container{
-    padding: 200px 0;
-}
-main .container > div > .menu{
-    display: flex;
-    justify-content: center;
-    
-}
-main .container > div > .menu li{}
-main .container > div > .menu li:last-child{margin-right: 0;}
-main .container > div > .menu li a{
-    font-size: 1.5rem;
-}
-/* 스포츠 섹션 */
-main .sport_wrap{padding-bottom: 0;}
-main .sport_menu_wrap{}
-main .sport_menu_wrap > h1{
-    width: 100%; text-align: center;
-}
-main .sport_menu_wrap > .menu{
-    display: flex;
-    /* background-color: red; */
-    width: 100%; margin: 0 auto;
-    margin: 40px 0 70px;
-}
-main .sport_menu_wrap > .menu > li{margin-right: 50px;}
-main .sport_menu_wrap > .menu > li.active{}
-main .sport_menu_wrap > .menu > li.active a{font-weight: 700;}
-main .sport_menu_wrap > .menu > li a{}
-main .sport_product_wrap{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 50px;
-    /* background-color: beige; */
-}
-main .sport_product_wrap .sport_product_preview{
-    background: url(../img/sport01.png) no-repeat;
-    width: 400px; height: 680px;
-    /* background-color: blue; */
-    margin-right: 70px;
-}
-main .sport_product_wrap .sport_product_preview > .title{
+main .profile .pro{
     width: 100%;
-    text-align: center;
-    /* background-color: aqua; */
-    color: #fff;
-    margin-top: 490px;
+    padding-top: 0;
 }
-main .sport_product_wrap .sport_product_preview .title > h2{
-    font-size: 2.50rem;
-    font-weight: 900;
-    margin-bottom: 25px;
-    color: #fff;
-}
-main .sport_product_wrap .sport_product_preview .title > a{
-    font-size: 1.5rem;
-    padding: 10px 65px;
-    border: 1px solid #fff;
-    color: #fff;
-}
-main .sport_product_wrap .sport_product_all{width: calc(100%-400px);}
-main .sport_product_wrap .sport_product_all .sport_product{}
-main .sport_product_wrap .sport_product_all .sport_product a{width: 100%;}
-main .sport_product_wrap .sport_product_all .sport_product a img{
-    width: 310px;
-    height: 540px;
-}
-main .sport_product_wrap .sport_product_all .sport_product .txt{margin-top: 23px;}
-main .sport_product_wrap .sport_product_all .sport_product .txt h3{
-    font-size: 1.13rem; 
-    font-weight: 300;
-}
-main .sport_product_wrap .sport_product_all .sport_product .txt p{
-    margin: 40px 0 10px;
-    font-size: 1.13rem;
-    font-weight: 500;
-}
-main .sport_product_wrap .sport_product_all .sport_product .txt p del{
-    font-size: 0.88rem;
-    font-weight: 300;
-    color: #8B8B8B;
-    margin-left: 23px;
-}
-main .sport_product_wrap .sport_product_all .sport_product .txt .tag{display: flex;}
-main .sport_product_wrap .sport_product_all .sport_product .txt .tag .red{background-color: #FF0000; color: #fff;}
-main .sport_product_wrap .sport_product_all .sport_product .txt .tag .black{background-color: #000; color: #fff;}
-main .sport_product_wrap .sport_product_all .sport_product .txt .tag .blue{background-color: #0600FB; color: #fff;}
-main .sport_product_wrap .sport_product_all .sport_product .txt .tag li{
-    font-weight: 300;
-    margin-right: 15px;
-    padding: 3px 10px;
-}
-main .sport_product_wrap .sport_product_all .sport_product .txt .tag li:last-child{margin-right: 0;}
-/* 아이템 섹션 */
-main .item_wrap{padding-bottom: 0;}
-main .item_menu_wrap{}
-main .item_menu_wrap > h1{
-    width: 100%; text-align: center;
-}
-main .item_menu_wrap > .menu{
-    display: flex;
-    /* background-color: red; */
-    width: 100%; margin: 0 auto;
-    margin: 40px 0 70px;
-}
-main .item_menu_wrap > .menu > li{margin-right: 150px;}
-main .item_menu_wrap > .menu > li.active{}
-main .item_menu_wrap > .menu > li.active a{font-weight: 700;}
-main .item_menu_wrap > .menu > li a{}
-main .item_product_wrap{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 50px;
-    /* background-color: beige; */
-}
-main .item_product_wrap .item_product_preview{
-    background: url(../img/item01.png) no-repeat;
-    width: 400px; height: 680px;
-    background-color: blue;
-    margin-right: 70px;
-}
-main .item_product_wrap .item_product_preview > .title{
-    width: 100%;
-    text-align: center;
-    /* background-color: aqua; */
-    color: #fff;
-    margin-top: 490px;
-}
-main .item_product_wrap .item_product_preview > .title > h2{
-    font-size: 2.50rem;
-    font-weight: 900;
-    margin-bottom: 25px;
-    color: #fff;
-}
-main .item_product_wrap .item_product_preview > .title > a{
-    font-size: 1.5rem;
-    padding: 10px 65px;
-    border: 1px solid #fff;
-    color: #fff;
-}
-main .item_product_wrap .item_product_all{width: calc(100%-400px);}
-main .item_product_wrap .item_product_all .item_product{}
-main .item_product_wrap .item_product_all .item_product a{width: 100%;}
-main .item_product_wrap .item_product_all .item_product a img{
-    width: 310px;
-    height: 540px;
-}
-main .item_product_wrap .item_product_all .item_product .txt{margin-top: 23px;}
-main .item_product_wrap .item_product_all .item_product .txt h3{
-    font-size: 1.13rem; 
-    font-weight: 300;
-}
-main .item_product_wrap .item_product_all .item_product .txt p{
-    margin: 40px 0 10px;
-    font-size: 1.13rem;
-    font-weight: 500;
-}
-main .item_product_wrap .item_product_all .item_product .txt p del{
-    font-size: 0.88rem;
-    font-weight: 300;
-    color: #8B8B8B;
-    margin-left: 23px;
-}
-main .item_product_wrap .item_product_all .item_product .txt .tag{display: flex;}
-main .item_product_wrap .item_product_all .item_product .txt .tag .red{background-color: #FF0000; color: #fff;}
-main .item_product_wrap .item_product_all .item_product .txt .tag .black{background-color: #000; color: #fff;}
-main .item_product_wrap .item_product_all .item_product .txt .tag .blue{background-color: #0600FB; color: #fff;}
-main .item_product_wrap .item_product_all .item_product .txt .tag li{
-    font-weight: 300;
-    margin-right: 15px;
-    padding: 3px 10px;
-}
-main .item_product_wrap .item_product_all .item_product .txt .tag li:last-child{margin-right: 0;}
-/* 룩북 섹션 */
-main .look_wrap{}
-main .look_wrap h1{
-    margin: 0 0 60px 50px;
-}
-main .look_wrap .look_product_all{width: 100%;}
-main .look_wrap .look_product_all .look_product{}
-main .look_wrap .look_product_all .look_product a{}
-main .look_wrap .look_product_all .look_product a img{}
-main .look_wrap .look_product_all .look_product .txt{}
-main .look_wrap .look_product_all .look_product .txt .top{display: flex; align-items: center; width: 480px;}
-main .look_wrap .look_product_all .look_product .txt .top .top_preview{width: 20%;}
-main .look_wrap .look_product_all .look_product .txt .top .top_preview img{width: 115px; height: 150px;}
-main .look_wrap .look_product_all .look_product .txt .top .top_name{width: 80%; margin-left: 20px;}
-main .look_wrap .look_product_all .look_product .txt .top .top_name h2{font-weight: 300;}
-main .look_wrap .look_product_all .look_product .txt .top .top_name .name{display: flex; justify-content: space-between; margin-top: 20px;}
-main .look_wrap .look_product_all .look_product .txt .top .top_name p{font-weight: 500;}
-main .look_wrap .look_product_all .look_product .txt .line{
-    width: 480px; height: 1px;
-    background-image: linear-gradient(90deg, #fff 10%, #999 20% 80%, #fff 90%);
-    
-}
-main .look_wrap .look_product_all .look_product .txt .bottom{display: flex; align-items: center; width: 480px;}
-main .look_wrap .look_product_all .look_product .txt .bottom .bottom_preview{width: 20%;}
-main .look_wrap .look_product_all .look_product .txt .bottom .bottom_preview img{width: 115px; height: 150px;}
-main .look_wrap .look_product_all .look_product .txt .bottom .bottom_name{width: 80%; margin-left: 20px;}
-main .look_wrap .look_product_all .look_product .txt .bottom .bottom_name h2{font-weight: 300;}
-main .look_wrap .look_product_all .look_product .txt .bottom .bottom_name .name{display: flex; justify-content: space-between; margin-top: 20px;}
-main .look_wrap .look_product_all .look_product .txt .bottom .bottom_name p{font-weight: 500;}
-/* 비디오 섹션 */
-main .movie_wrap{}
-main .movie_wrap h1{
-    margin: 0 0 60px 50px;
-}
-main .movie_wrap .video_wrap{
-    background-color: #000;
-    margin-top: 32px;
-    /* background-color: red; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+main .profile .pro_cont{
+    width: 1400px;
     margin: 0 auto;
-    padding: 68px 0 101px;
-    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 100px;
 }
-main .movie_wrap .video_wrap video{}
-main .movie_wrap .video_wrap a{
-    position: absolute;
-    right: 40px;
-    bottom: 30px;
-
+main .profile .pro_img{
+    width: 50%;
+    padding-top: 70px;
 }
-main .movie_wrap .video_wrap a img{}
-/* 배너 섹션, 공통 */
-main .banner_wrap{}
-main .banner_wrap .banner_top{
-    width: 100%; height: 65px;
-    background: #000 url(../img/flow03.jpg) repeat-x center center;
-    animation: flow_01 20s linear infinite;
-    border-top: 1px solid #fff;
-}
-@keyframes flow_01{
-    0%{background-position-x: 0;}
-    100%{background-position-x: 100%;}
-}
-main .banner_wrap .banner_bottom{
-    width: 100%; height: 65px;
-    background: #000 url(../img/flow04.jpg) repeat-x center center;
-    animation: flow_02 20s linear infinite;
-    border: 1px solid #fff;
-}
-@keyframes flow_02{
-    0%{background-position-x: 100%}
-    100%{background-position-x: 0%;}
+main .profile .pro_img img{
+    width: 500px; height: 500px;
+    border-radius: 100%;
 }
 
-
+main .profile .pro_txt{
+    width: 50%;
+}
+main .profile .pro_txt h2{
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #57160B;
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+main .profile .pro_txt .about{
+    padding-top: 0;
+}
+main .profile .pro_txt ul{}
+main .profile .pro_txt ul li{
+    letter-spacing: 0.02em;
+    font-size: 1.0rem;
+    color: #57160B;
+}
+main .profile .pro_txt .txt01{
+    display: flex;
+    flex-flow: row wrap;
+    width: 481px;
+    border-left: 1px solid #57160B; 
+    padding-left: 20px;
+}
+main .profile .pro_txt .txt01 li:nth-child(-n+4){
+    padding-bottom: 20px;
+}
+main .profile .pro_txt .txt01 .title{
+    width: 70px;
+}
+main .profile .pro_txt .txt01 .content{
+    width: 160px;   
+}
+main .profile .pro_txt .txt02{
+    display: flex;
+    flex-flow: row wrap;
+    width: 696px;
+    border-left: 1px solid #000;
+    padding-left: 20px;
+}
+main .profile .pro_txt .txt02 li:nth-child(-n+4){
+    padding-bottom: 20px;
+}
+main .profile .pro_txt .txt02 .term{
+    width: 175px;
+}
+main .profile .pro_txt .txt02 .school{
+    width: 500px;
+}
+main .profile .pro_txt .txt03{
+    display: flex;
+    flex-flow: row wrap;
+    width: 656px;
+    border-left: 1px solid #000;
+    padding-left: 20px;
+}
+main .profile .pro_txt .txt03 .time{
+    width: 175px;
+}
+main .profile .pro_txt .txt03 .company{
+    width: 460px;
+}
+main .profile .pro_txt .txt04{
+    display: flex;
+    flex-flow: row wrap;
+    border-left: 1px solid #000;
+    padding-left: 20px;
+    width: 679px;
+}
+main .profile .pro_txt .txt04 li{
+    margin-right: 20px;
+    width: 65px;
+}
+main .profile .pro_txt .txt04 li:nth-child(4),
+main .profile .pro_txt .txt04 li:nth-child(5),
+main .profile .pro_txt .txt04 li:nth-child(6),
+main .profile .pro_txt .txt04 li:nth-child(7){
+    width: 80px;
+}
+main .profile .pro_txt .txt04 li img{
+    width: 100%;
+}
+/* 웹 */
+main .web{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap; 
+    background-color: #EFE8E5;
+}
+main .web .web_cont{
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+main .web h2{
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    font-size: 40px;
+    font-family: "Noto Serif", serif;
+    color: #57160B;
+}
+main .web .web_img{
+    width: 870px;
+}
+main .web .web_img img{
+    width: 100%;
+}
+main .web .web_txt{
+    width: 700px;
+    background-color: red;
+}
+main .web .web_txt h3{}
+main .web .web_txt h3 ul{}
+main .web .web_txt h3 ul li{}
+main .web .web_txt h3 .txt{}
+main .web .web_txt h3 ul .name{}
+main .web .web_txt h3 ul .content{}
+main .web .web_txt h3 .btn{}
+main .web .web_txt h3 .btn li{}
+main .web .web_txt h3 .btn li a{}
 
