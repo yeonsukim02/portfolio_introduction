@@ -1,11 +1,25 @@
+body > * {min-width: 1920px;}
+/* 스와이퍼 슬라이드 공통 */
+.portfolio{height:100vh;}
+.portfolio .swiper-slide{height:100vh;}
+main .profile_li{background-color: #F9F5F2;}
+main .tosspay_li{background-color: #EFE8E5;}
+main .xexymixx_li{background-color: #EFE8E5;}
+main .snp_li{background-color: #F9F5F2;}
+main .lottehotel_li{background-color: #F9F5F2;}
+main .page_li{background-color: #EFE8E5;}
+main .banner_li{background-color: #F9F5F2;}
+main .sns_li{background-color: #F9F5F2;}
 /* 헤더 */
 header{
-    background-color: transparent;
-    width: 1920px;  height: 80px;
+    background-color: #B32E18;
+    color: #fff;
+    width: 100%;  height: 80px;
     display: flex;
+    align-items: center;
     position: fixed;
     z-index: 100;
-    padding: 24px 60px;
+    padding-left: 60px;
 }
 header nav{position: relative;}
 header nav .gnb{display: flex;}
@@ -17,135 +31,132 @@ header nav .gnb > li:last-child{margin: 0;}
 header nav .gnb > li > a{
     color: #fff;
     font-size: 1.0rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.02em;
+    font-family: "Noto Serif", serif;
+    font-weight: 700;
 }
 /* 비주얼 */
 main{}
-main .visual{
-    height: 90vh;
+main .intro{
     background: url(../img/main.png) no-repeat;
 }
-main .visual p{
+main .intro p{
     font-family: "Noto Serif", serif;
     color: #57160B;
     font-size: 6.25rem;
     padding: 360px 0 360px 60px;
+    letter-spacing: 0.1em;
 }
-main .visual span{
+main .intro span{
     font-family: "Noto Serif", serif;
     color: #57160B;
     font-size: 6.25rem;
     padding-left: 300px; padding-top: 35px;
 }
 /* 프로필 */
-main .profile{ 
-    width: 100%;
-    line-height: 970px;
-    display: flex;
-    flex-flow: row wrap; 
+main .profile{
     background-color: #F9F5F2;
-}
-main .profile h1{
-    font-weight: 300;
-    letter-spacing: 0.02em;
-    font-size: 40px;
-    font-family: "Noto Serif", serif;
-    color: #57160B;
-    padding: 50px 0 20px 80px;
-}
-main .profile .pro{
-    width: 100%;
-    padding-top: 0;
-}
-main .profile .pro_cont{
-    width: 1400px;
-    margin: 0 auto;
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: column;
     padding-top: 100px;
 }
-main .profile .pro_img{
+main h1{
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    font-size: 2.50rem;
+    font-family: "Noto Serif", serif;
+    color: #57160B;
+    text-align: center;
+}
+main .profile .pro{
+    text-align: initial;
+    padding-left: 80px;
+    /* background-color: red; */
+}
+main .profile .pro_cont{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 1400px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+main .profile .pro_cont .pro_img{
     width: 50%;
-    padding-top: 70px;
 }
-main .profile .pro_img img{
-    width: 500px; height: 500px;
-    border-radius: 100%;
-}
-
-main .profile .pro_txt{
+main .profile .pro_cont .pro_img img{}
+main .profile .pro_cont .pro_txt{
     width: 50%;
 }
-main .profile .pro_txt h2{
-    width: 100%;
+main .profile .pro_cont .pro_txt h2{
     font-size: 2.5rem;
     font-weight: 300;
     color: #57160B;
     padding-bottom: 20px;
     padding-top: 60px;
+    letter-spacing: 0.08em;
 }
-main .profile .pro_txt .about{
-    padding-top: 0;
-}
-main .profile .pro_txt ul{}
-main .profile .pro_txt ul li{
+main .profile .pro_cont .pro_txt .about{padding-top: 0;}
+main .profile .pro_cont .pro_txt ul{}
+main .profile .pro_cont .pro_txt ul li{
     letter-spacing: 0.02em;
     font-size: 1.0rem;
     color: #57160B;
 }
-main .profile .pro_txt .txt01{
+main .profile .pro_cont .pro_txt .txt01{
     display: flex;
     flex-flow: row wrap;
-    width: 481px;
+    width: 700px;
     border-left: 1px solid #57160B; 
     padding-left: 20px;
 }
 main .profile .pro_txt .txt01 li:nth-child(-n+4){
     padding-bottom: 20px;
 }
-main .profile .pro_txt .txt01 .title{
-    width: 70px;
+main .profile .pro_cont .pro_txt .txt01 .title{
+    width: 120px;
 }
-main .profile .pro_txt .txt01 .content{
-    width: 160px;   
+main .profile .pro_cont .pro_txt .txt01 .content{
+    width: 160px;
 }
-main .profile .pro_txt .txt02{
+main .profile .pro_cont .pro_txt .txt02{
     display: flex;
     flex-flow: row wrap;
-    width: 696px;
+    width: 700px;
     border-left: 1px solid #000;
     padding-left: 20px;
 }
 main .profile .pro_txt .txt02 li:nth-child(-n+4){
     padding-bottom: 20px;
 }
-main .profile .pro_txt .txt02 .term{
-    width: 175px;
+main .profile .pro_cont .pro_txt .txt02 .term{
+    width: 170px;
 }
-main .profile .pro_txt .txt02 .school{
-    width: 500px;
+main .profile .pro_cont .pro_txt .txt02 .school{
+    width: 490px;
 }
-main .profile .pro_txt .txt03{
+main .profile .pro_cont .pro_txt .txt03{
     display: flex;
     flex-flow: row wrap;
-    width: 656px;
+    width: 700px;
     border-left: 1px solid #000;
     padding-left: 20px;
 }
-main .profile .pro_txt .txt03 .time{
-    width: 175px;
+main .profile .pro_cont .pro_txt .txt03 .time{
+    width: 170px;
 }
-main .profile .pro_txt .txt03 .company{
-    width: 460px;
+main .profile .pro_cont .pro_txt .txt03 .company{
+    width: 490px;
 }
-main .profile .pro_txt .txt04{
+main .profile .pro_cont .pro_txt .txt04{
     display: flex;
+    align-items: center;
     flex-flow: row wrap;
     border-left: 1px solid #000;
     padding-left: 20px;
-    width: 679px;
+    width: 700px;
 }
-main .profile .pro_txt .txt04 li{
+main .profile .pro_cont .pro_txt .txt04 li{
     margin-right: 20px;
     width: 65px;
 }
@@ -158,45 +169,137 @@ main .profile .pro_txt .txt04 li:nth-child(7){
 main .profile .pro_txt .txt04 li img{
     width: 100%;
 }
-/* 웹 */
+/* 공통, 웹 */
 main .web{
-    width: 100%;
     display: flex;
-    flex-flow: row wrap; 
-    background-color: #EFE8E5;
+    flex-direction: column;
+    padding-top: 150px;/*  */
 }
+main .web h1{}
 main .web .web_cont{
-    width: 1400px;
-    margin: 0 auto;
     display: flex;
-    flex-flow: row nowrap;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
 }
-main .web h2{
-    width: 100%;
-    text-align: center;
-    font-weight: 300;
-    letter-spacing: 0.02em;
-    font-size: 40px;
-    font-family: "Noto Serif", serif;
+main .web .web_cont .web_img{width: 50%;}
+main .web .web_cont .web_img img{width: 100%;}
+main .web .web_cont .web_txt{
+    width: 50%; 
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .web .web_cont .web_txt h2{
+    letter-spacing: 0.1em;
+    font-size: 2.50rem;
     color: #57160B;
 }
-main .web .web_img{
-    width: 870px;
+main .web .web_cont ul{}
+main .web .web_cont ul li{}
+main .web .web_cont .web_txt .txt{
+    margin: 80px 0 100px;
 }
-main .web .web_img img{
+main .web .web_cont .web_txt .txt li{
+    display: flex;
+    margin-bottom: 20px;
     width: 100%;
 }
-main .web .web_txt{
-    width: 700px;
-    background-color: red;
+main .web .web_cont .web_txt .txt li:last-child{
+    margin-bottom: 0;
 }
-main .web .web_txt h3{}
-main .web .web_txt h3 ul{}
-main .web .web_txt h3 ul li{}
-main .web .web_txt h3 .txt{}
-main .web .web_txt h3 ul .name{}
-main .web .web_txt h3 ul .content{}
-main .web .web_txt h3 .btn{}
-main .web .web_txt h3 .btn li{}
-main .web .web_txt h3 .btn li a{}
-
+main .web .web_cont .web_txt .txt li h3{
+    width: 30%;
+    /* background-color: yellow; */
+    color: #57160B;
+    font-size: 1.5rem;
+}
+main .web .web_cont .web_txt .txt li p{
+    width: 70%;
+    /* background-color: green; */
+    font-size: 1.5rem;
+}
+main .web .web_cont .web_txt .btn{}
+main .web .web_cont .web_txt .btn a{
+    padding: 5px 20px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    background-color: #B22B15;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    margin-right: 20px;
+}
+main .web .web_cont .web_txt .btn .btn01:hover{
+    background-color: #57160B;
+}
+main .web .web_cont .web_txt .btn .btn02:hover{
+    background-color: #57160B;
+}
+main .web .web_cont .web_txt .btn .btn03:hover{
+    background-color: #57160B;
+}
+/* 잭시믹스, 롯데호텔 */
+main .portfolio .xexymixx .xexymixx_cont{flex-direction: row-reverse;}
+main .portfolio .lottehotel .lottehotel_cont{flex-direction: row-reverse;}
+/* 공통, 디자인*/
+main .design{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+main .design h1{}
+main .design p{
+    display: flex;
+    align-items: center;
+    padding: 50px 0 15px 210px;
+}
+main .design a img{}
+main .design .design_wrap{
+    padding-top: 200px;
+    margin: 0 auto;
+    width: 90%; height: 600px;
+}
+main .design .design_wrap img{width: 100%;}
+/* 상세페이지 */
+main .page .page_wrap{
+    padding-top: 0;
+    width: 80%; height: 600px;
+}
+/* 상세페이지 확대 */
+.detail_big{
+    position: fixed; 
+    left:0; top:0; 
+    z-index: 900; 
+    background:rgba(0,0,0,0.5);
+    /*  */
+    width:100%; height:100vh; overflow-y:auto;
+    text-align:center;
+    display:none;
+}
+.detail_big img {width:800px;}
+/* 배너 */
+main .banner .banner_wrap{padding-top: 250px;}
+main .banner .banner_wrap a{margin-bottom: 20px;}
+main .banner .banner_wrap a:nth-child(3){margin-bottom: 0;}
+main .banner .banner_wrap .swiper-slide:hover{
+    transform: scale(1.1);
+    transition: transform .9s;
+}
+/* sns */
+main .sns .sns_wrap{}
+main .sns .sns_wrap .swiper-slide:hover{
+    transform: scale(1.1);
+    transition: transform .9s;
+}
+/* 푸터 */
+main .footer_li{
+    background: url(../img/footer.png) no-repeat;
+}
+main .footer_li p{
+    font-family: "Noto Serif", serif;
+    color: #57160B;
+    font-size: 6.25rem;
+    line-height: 1000px;
+    text-align: center;
+}
