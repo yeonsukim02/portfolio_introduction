@@ -3,288 +3,558 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>xexymixx</title>
     <!-- font -->
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactuspretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1300..900&display=swap" rel="stylesheet">
-    <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./script/common.js" defer></script>
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- 스와이퍼 플러그인 필수 연결파일 -->
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
+    <!-- 제이쿼리 라이브러리 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script/common.js" defer></script>
+    <script src="./script/main.js" defer></script>
 </head>
 <body>
     <header>
+        <h1><a href="./index.html"><img src="./img/logo.png" alt="젝시믹스 로고"></a></h1>
         <nav>
             <ul class="gnb">
-                <li><a href="#intro_sub">HOME</a></li>
-                <li><a href="#profile_sub">PROFILE</a></li>
-                <li><a href="#web_sub">WEB</a></li>
-                <li><a href="#page_sub">DETAIL PAGE</a></li>
-                <li><a href="#banner_sub">BANNER DESIGN</a></li>
-                <li><a href="#sns_sub">SNS DESIGN</a></li>
+                <li><a href="./reggings.html"> WOMEN</a>
+                    <ul class="sub">
+                        <li><a href="#">상의</a></li>
+                        <li><a href="#">하의</a></li>
+                        <li><a href="#">이너</a></li>
+                        <li><a href="#">아우터</a></li>
+                        <li><a href="#">슈즈</a></li>
+                    </ul>
+                </li>
+                <li><a href="./reggings.html">MEN</a>
+                    <ul class="sub">
+                        <li><a href="#">상의</a></li>
+                        <li><a href="#">하의</a></li>
+                        <li><a href="#">아우터</a></li>
+                        <li><a href="#">슈즈</a></li>
+                    </ul>
+                </li>
+                <li><a href="./reggings.html">KIDS</a>
+                    <ul class="sub">
+                        <li><a href="#">상의</a></li>
+                        <li><a href="#">하의</a></li>
+                        <li><a href="#">아우터</a></li>
+                        <li><a href="#">슈즈</a></li>
+                    </ul>
+                </li>
+                <li><a href="./reggings.html"><span>|</span>SPORTS WEAR</a>
+                    <ul class="sub">
+                        <li><a href="#">스윔웨어</a></li>
+                        <li><a href="#">골프웨어</a></li>
+                        <li><a href="#">런닝웨어</a></li>
+                        <li><a href="#">헬스웨어</a></li>
+                    </ul>
+                </li>
+                <li><a href="./reggings.html"><span>|</span>BUSINESS WEAR</a>
+                    <ul class="sub">
+                        <li><a href="#">셔츠</a></li>
+                        <li><a href="#">팬츠</a></li>
+                    </ul>
+                </li>
+                <li><a href="./reggings.html"><span>|</span>BLACK LABEL</a>
+                    <ul class="sub">
+                        <li><a href="#">우먼즈</a></li>
+                        <li><a href="#">맨즈</a></li>
+                    </ul>
+                </li>
             </ul>
+            <div class="sub_bg"></div>
         </nav>
+        <div class="lnb">
+            <a href="#"><img src="./img/lnb01.png" alt="장바구니"></a>
+            <a href="#"><img src="./img/lnb02.png" alt="로그인"></a>
+            <a href="#"><img src="./img/lnb03.png" alt="검색하기"></a>
+        </div>
     </header>
     <main>
-        <div class="swiper portfolio">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide intro_li">
-                    <div class="intro" id="intro_sub">
-                        <!-- 백그라운드 이미지 -->
-                        <p>KIM YEONSU'S<br><span>PORTFOLIO</span></p>
+        <section class="visual">
+            <div class="visual_txt_wrap">
+                <h1>24 젝시믹스 블랙라벨 시그니처</h1>
+                <a href="./reggings.html" class="view_more">자세히 보기</a>
+            </div>
+            <!-- Slider main container -->
+            <div class="swiper visual_all">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide visual_li"><img src="./img/main01.png" alt=""></div>
+                    <div class="swiper-slide visual_li"><img src="./img/main02.png" alt=""></div>
+                    <div class="swiper-slide visual_li"><img src="./img/main03.png" alt=""></div>
+                </div>
+                <!-- navigation-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+        <section class="rank_wrap container">
+            <div class="rank_title_wrap">
+                <h1>XEXYMIXX RANKING</h1>
+                <a href="#">랭킹 전체보기</a>
+                <!-- navigation-->
+                <div class="rank_arrow">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="swiper rank_product_wrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide rank_product">
+                        <h2>01 바이커쇼츠</h2>
+                        <a href="#"><img src="./img/rank01.png" alt="랭킹 상품 이미지"></a>
+                    </div>
+                    <div class="swiper-slide rank_product">
+                        <h2>02 브라탑</h2>
+                        <a href="#"><img src="./img/rank02.png" alt="랭킹 상품 이미지"></a>
+                    </div>
+                    <div class="swiper-slide rank_product">
+                        <h2>03 레깅스</h2>
+                        <a href="#"><img src="./img/rank03.png" alt="랭킹 상품 이미지"></a>
+                    </div>
+                    <div class="swiper-slide rank_product">
+                        <h2>04 숏슬리브</h2>
+                        <a href="#"><img src="./img/rank04.png" alt="랭킹 상품 이미지"></a>
+                    </div>
+                    <div class="swiper-slide rank_product">
+                        <h2>05 오버티셔츠</h2>
+                        <a href="#"><img src="./img/rank05.png" alt="랭킹 상품 이미지"></a>
+                    </div>
+                    <div class="swiper-slide rank_product">
+                        <h2>05 오버티셔츠</h2>
+                        <a href="#"><img src="./img/rank05.png" alt="랭킹 상품 이미지"></a>
                     </div>
                 </div>
-                <div class="swiper-slide profile_li">
-                    <div class="profile" id="profile_sub">
-                        <h1 class="pro">01 PROFILE</h1>
-                        <div class="pro_cont">
-                            <div class="pro_img"><img src="./img/profile02.png" alt=""></div>
-                            <div class="pro_txt">
-                                    <h2 class="about">ABOUT ME</h2>
-                                    <ul class="txt01">
-                                        <li class="title">Name.</li>
-                                        <li class="content">김연수</li>
-                                        <li class="title">Birth.</li>
-                                        <li class="content">1991년 02월 13일</li>
-                                        <li class="title">Phone.</li>
-                                        <li class="content">010 6516 5155</li>
-                                        <li class="title">Email.</li>
-                                        <li class="content">gkfn3470@gmail.com</li>
-                                    </ul>
-                                    <h2>EDUCATION</h2>
-                                    <ul class="txt02">
-                                        <li class="term">2023.05~2024.10</li>
-                                        <li class="school">그린컴퓨터아카데미 UI/UX 반응형 웹디자인&웹퍼블리셔 양성과정 수료</li>
-                                        <li class="term">2023.08~2024.01</li>
-                                        <li class="school">SF Film School 마야/지브러쉬 과정 수료</li>
-                                        <li class="term">2009.11~2012.10</li>
-                                        <li class="school">필리핀 ASCM 대학교 AB.Theology</li>
-                                    </ul>
-                                    <h2>CAREER</h2>
-                                    <ul class="txt03">
-                                        <li class="time">2019.09~2020.02</li>
-                                        <li class="company">인천공항 LG Uplus 로밍센터 통역 및 안내</li>
-                                    </ul>
-                                    <h2>SKILL</h2>
-                                    <ul class="txt04">
-                                        <li><img src="./img/skill1.png" alt=""></li>
-                                        <li><img src="./img/skill2.png" alt=""></li>
-                                        <li><img src="./img/skill3.png" alt=""></li>
-                                        <li><img src="./img/skill4.png" alt=""></li>
-                                        <li><img src="./img/skill5.png" alt=""></li>
-                                        <li><img src="./img/skill6.png" alt=""></li>
-                                        <li><img src="./img/skill7.png" alt=""></li>
-                                    </ul>
-                            </div>
-                        </div>
+            </div>
+        </section>
+        <section class="banner_wrap">
+            <div class="banner_top"></div>
+            <div class="banner_bottom"></div>
+        </section>
+        <!-- 스포츠웨어 컨텐츠 시작 -->
+        <section class="sport_wrap container">
+            <div class="sport_menu_wrap">
+                <h1>XEXYMIXX SPORTSWEAR</h1>
+                <ul class="menu">
+                    <li><a href="#">전체</a></li>
+                    <li class="active"><a href="#">스윔웨어</a></li>
+                    <li><a href="#">골프웨어</a></li>
+                    <li><a href="#">테니스웨어</a></li>
+                    <li><a href="#">러닝웨어</a></li>
+                    <li><a href="#">헬스웨어</a></li>
+                </ul>
+            </div>
+            <div class="sport_product_wrap">
+                <div class="sport_product_preview">
+                    <!-- 백그라운드 이미지, 프리뷰 -->
+                    <div class="title">
+                        <h2>스윔웨어</h2>
+                        <a href="#" class="more_view">더보기</a>
                     </div>
                 </div>
-                <div class="swiper-slide tosspay_li">
-                    <div class="tosspay web" id="web_sub">
-                        <h1>02 WEB</h1>
-                        <div class="tosspay_cont web_cont">
-                            <div class="web_img"><img src="./img/m01.png" alt=""></div>
-                            <div class="web_txt">
-                                <h2>TOSSPAY MALL</h2>
-                                <ul class="txt">
-                                    <li>
-                                        <h3>사이트명</h3>
-                                        <p>토스페이몰 (종합 쇼핑몰)</p>
-                                    </li>
-                                    <li>
-                                        <h3>제작기간</h3>
-                                        <p>24년 09월 16일 ~ 28일 (13일, 78시간)</p>
-                                    </li>
-                                    <li>
-                                        <h3>제작페이지</h3>
-                                        <p>index, sub*2</p>
-                                    </li>
-                                    <li>
-                                        <h3>사용프로그램</h3>
-                                        <p>Photoshop, Figma, HTML, CSS, JavaScript, jQuery</p>
-                                    </li>
+                <!-- 스포츠웨어 상품 스와이퍼 -->
+                <div class="swiper sport_product_all">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide sport_product">
+                            <a href="#"><img src="./img/sport02.png" alt="스윔웨어 상품 이미지"></a>
+                            <div class="txt">
+                                <h3>블랙라벨 시그니처 360N 레깅스 4.5부</h3>
+                                <p>39,800원<del>84,000</del></p>
+                                <ul class="tag">
+                                    <li class="red">12컬러</li>
+                                    <li class="black">~3XL</li>
+                                    <li class="blue">1+1</li>
                                 </ul>
-                                <div class="btn">
-                                    <a href="https://www.figma.com/proto/m4IEtMKJcPgZjwn0cnml52/%EA%B8%B0%ED%9A%8D%EC%84%9C_%ED%86%A0%EC%8A%A4%ED%8E%98%EC%9D%B4?page-id=0%3A1&node-id=1-108&node-type=frame&viewport=800%2C410%2C0.04&t=x6EAlcVl4cZt75sg-1&scaling=contain&content-scaling=fixed" class="btn01" target="_blank">기획서</a>
-                                    <a href="https://www.figma.com/design/HOL4WqGIFb7NDXPjwlfLEZ/01-%ED%86%A0%EC%8A%A4%ED%8E%98%EC%9D%B4?node-id=0-1&t=AGu685DbvE0e93Xm-1" class="btn02" target="_blank">Figma 결과</a>
-                                    <a href="https://yeonsukim02.github.io/tosspaymall/" class="btn03" target="_blank">최종 결과</a>
-                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide xexymixx_li">
-                    <div class="xexymixx web" id="web_sub">
-                        <div class="xexymixx_cont web_cont">
-                            <div class="web_img"><img src="./img/m02.png" alt=""></div>
-                            <div class="web_txt">
-                                <h2>XEXYMIXX</h2>
-                                <ul class="txt">
-                                    <li>
-                                        <h3>사이트명</h3>
-                                        <p>젝시믹스 (의류 쇼핑몰)</p>
-                                    </li>
-                                    <li>
-                                        <h3>제작기간</h3>
-                                        <p>24년 09월 02일 ~ 14일 (13일, 78시간)</p>
-                                    </li>
-                                    <li>
-                                        <h3>제작페이지</h3>
-                                        <p>index, sub*2</p>
-                                    </li>
-                                    <li>
-                                        <h3>사용프로그램</h3>
-                                        <p>Photoshop, Figma, HTML, CSS, JavaScript, jQuery</p>
-                                    </li>
+                        <div class="swiper-slide sport_product">
+                            <a href="#"><img src="./img/sport03.png" alt="스윔웨어 상품 이미지"></a>
+                            <div class="txt">
+                                <h3>블랙라벨 시그니처 360N 레깅스 4.5부</h3>
+                                <p>39,800원<del>84,000</del></p>
+                                <ul class="tag">
+                                    <li class="red">12컬러</li>
+                                    <li class="black">~3XL</li>
+                                    <li class="blue">1+1</li>
                                 </ul>
-                                <div class="btn">
-                                    <!-- <a href="#" class="btn01" target="_blank">기획서</a> -->
-                                    <a href="https://www.figma.com/proto/ur70k60nzryZHDNAOLNOAV/02-%EC%A0%9D%EC%8B%9C%EB%AF%B9%EC%8A%A4?page-id=0%3A1&node-id=300-29&node-type=frame&viewport=1342%2C249%2C0.11&t=U0ZX5pxQeLOeHeTe-1&scaling=min-zoom&content-scaling=fixed" class="btn02" target="_blank">Figma 결과</a>
-                                    <a href="https://yeonsukim02.github.io/xexymixx/" class="btn03" target="_blank">최종 결과</a>
-                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide snp_li">
-                    <div class="snp web" id="web_sub">
-                        <div class="snp_cont web_cont">
-                            <div class="web_img"><img src="./img/m03.png" alt=""></div>
-                            <div class="web_txt">
-                                <h2>SNP</h2>
-                                <ul class="txt">
-                                    <li>
-                                        <h3>사이트명</h3>
-                                        <p>SNP (화장품 쇼핑몰)</p>
-                                    </li>
-                                    <li>
-                                        <h3>제작기간</h3>
-                                        <p>24년 08월 25일 ~ 31일 (7일, 49시간)</p>
-                                    </li>
-                                    <li>
-                                        <h3>제작페이지</h3>
-                                        <p>index</p>
-                                    </li>
-                                    <li>
-                                        <h3>사용프로그램</h3>
-                                        <p>Photoshop, Figma, HTML, CSS, JavaScript, jQuery</p>
-                                    </li>
+                        <div class="swiper-slide sport_product">
+                            <a href="#"><img src="./img/sport04.png" alt="스윔웨어 상품 이미지"></a>
+                            <div class="txt">
+                                <h3>블랙라벨 시그니처 360N 레깅스 4.5부</h3>
+                                <p>39,800원<del>84,000</del></p>
+                                <ul class="tag">
+                                    <li class="red">12컬러</li>
+                                    <li class="black">~3XL</li>
+                                    <li class="blue">1+1</li>
                                 </ul>
-                                <div class="btn">
-                                    <!-- <a href="#" class="btn01" target="_blank">기획서</a> -->
-                                    <a href="https://www.figma.com/proto/N8Tx8vJqkTbcGUGQghZDSD/03-snp?page-id=0%3A1&node-id=28-826&node-type=canvas&viewport=-1763%2C69%2C0.09&t=GTtCxITioIR9bfiu-1&scaling=min-zoom&content-scaling=fixed" class="btn02" target="_blank">Figma 결과</a>
-                                    <!-- <a href="#" class="btn03" target="_blank">최종 결과</a> -->
-                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide lottehotel_li">
-                    <div class="lottehotel web" id="web_sub">
-                        <div class="lottehotel_cont web_cont">
-                            <div class="web_img"><img src="./img/m04.png" alt=""></div>
-                            <div class="web_txt">
-                                <h2>LOTTEHOTEL</h2>
-                                <ul class="txt">
-                                    <li>
-                                        <h3>사이트명</h3>
-                                        <p>롯데호텔</p>
-                                    </li>
-                                    <li>
-                                        <h3>제작기간</h3>
-                                        <p>24년 08월 18일 ~ 24일 (7일, 49시간)</p>
-                                    </li>
-                                    <li>
-                                        <h3>제작페이지</h3>
-                                        <p>index</p>
-                                    </li>
-                                    <li>
-                                        <h3>사용프로그램</h3>
-                                        <p>Photoshop, Figma, HTML, CSS, JavaScript, jQuery</p>
-                                    </li>
+                        <div class="swiper-slide sport_product">
+                            <a href="#"><img src="./img/sport05.png" alt="스윔웨어 상품 이미지"></a>
+                            <div class="txt">
+                                <h3>블랙라벨 시그니처 360N 레깅스 4.5부</h3>
+                                <p>39,800원<del>84,000</del></p>
+                                <ul class="tag">
+                                    <li class="red">12컬러</li>
+                                    <li class="black">~3XL</li>
+                                    <li class="blue">1+1</li>
                                 </ul>
-                                <div class="btn">
-                                    <!-- <a href="#" class="btn01" target="_blank">기획서</a> -->
-                                    <a href="https://www.figma.com/proto/EXh1O6vIElZRQL1YQYwuts/04-%EB%A1%AF%EB%8D%B0%ED%98%B8%ED%85%94?page-id=0%3A1&node-id=1-15&node-type=frame&viewport=607%2C487%2C0.08&t=aOY2SZUEREVZ4uWY-1&scaling=min-zoom&content-scaling=fixed" class="btn02" target="_blank">Figma 결과</a>
-                                    <!-- <a href="#" class="btn03" target="_blank">최종 결과</a> -->
-                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sport_product">
+                            <a href="#"><img src="./img/sport05.png" alt="스윔웨어 상품 이미지"></a>
+                            <div class="txt">
+                                <h3>블랙라벨 시그니처 360N 레깅스 4.5부</h3>
+                                <p>39,800원<del>84,000</del></p>
+                                <ul class="tag">
+                                    <li class="red">12컬러</li>
+                                    <li class="black">~3XL</li>
+                                    <li class="blue">1+1</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide page_li">
-                    <div class="page design" id="page_sub">
-                        <h1>03 DETAIL PAGE</h1>
-                        <p><img src="./img/flower.png" alt="꽃 이미지">클릭하면 크게 보실 수 있습니다.</p>
-                        <div class="swiper page_wrap design_wrap">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide modal"><img src="./img/page01.png" alt="상세페이지 디자인"></div>
-                                <div class="swiper-slide modal"><img src="./img/page02.png" alt="상세페이지 디자인"></div>
+            </div>
+        </section>
+        <section class="item_wrap container">
+            <div class="item_menu_wrap">
+                <h1>XEXYMIXX ITEMS</h1>
+                <ul class="menu">
+                    <li><a href="#">전체</a></li>
+                    <li class="active"><a href="#"> 상의</a></li>
+                    <li><a href="#">하의</a></li>
+                    <li><a href="#">신발</a></li>
+                    <li><a href="#">용품</a></li>
+                </ul>
+            </div>
+            <div class="item_product_wrap">
+                <div class="item_product_preview">
+                    <!-- 백그라운드 이미지, 프리뷰 -->
+                    <div class="title">
+                        <h2>스윔웨어</h2>
+                        <a href="#" class="more_view">더보기</a>
+                    </div>
+                </div>
+                <!-- 스포츠웨어 상품 스와이퍼 -->
+                <div class="swiper item_product_all">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide item_product">
+                            <a href="#"><img src="./img/item02.png" alt="스윔웨어 상품 이미지"></a>
+                            <div class="txt">
+                                <h3>X-스트랩 브라탑</h3>
+                                <p>49,800원<del>88,000</del></p>
+                                <ul class="tag">
+                                    <li class="red">8컬러</li>
+                                    <li class="black">~3XL</li>
+                                    <li class="blue">1+1</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="detail_big" title="아무 곳이나 클릭하면 꺼져요!">
-                            <img src="./img/page01.png" alt="">
+                        <div class="swiper-slide item_product">
+                            <a href="#"><img src="./img/item03.png" alt="스윔웨어 상품 이미지"></a>
+                            <div class="txt">
+                                <h3>X-스트랩 브라탑</h3>
+                                <p>49,800원<del>88,000</del></p>
+                                <ul class="tag">
+                                    <li class="red">8컬러</li>
+                                    <li class="black">~3XL</li>
+                                    <li class="blue">1+1</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item_product">
+                            <a href="#"><img src="./img/item04.png" alt="스윔웨어 상품 이미지"></a>
+                            <div class="txt">
+                                <h3>X-스트랩 브라탑</h3>
+                                <p>49,800원<del>88,000</del></p>
+                                <ul class="tag">
+                                    <li class="red">8컬러</li>
+                                    <li class="black">~3XL</li>
+                                    <li class="blue">1+1</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item_product">
+                            <a href="#"><img src="./img/item05.png" alt="스윔웨어 상품 이미지"></a>
+                            <div class="txt">
+                                <h3>X-스트랩 브라탑</h3>
+                                <p>49,800원<del>88,000</del></p>
+                                <ul class="tag">
+                                    <li class="red">8컬러</li>
+                                    <li class="black">~3XL</li>
+                                    <li class="blue">1+1</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item_product">
+                            <a href="#"><img src="./img/item05.png" alt="스윔웨어 상품 이미지"></a>
+                            <div class="txt">
+                                <h3>X-스트랩 브라탑</h3>
+                                <p>49,800원<del>88,000</del></p>
+                                <ul class="tag">
+                                    <li class="red">8컬러</li>
+                                    <li class="black">~3XL</li>
+                                    <li class="blue">1+1</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide banner_li">
-                    <div class="banner design" id="banner_sub">
-                        <h1>04 BANNER DESIGN</h1>
-                        <div class="swiper banner_wrap design_wrap">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="#"><img src="./img/banner01.png" alt="배너 디자인"></a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#"><img src="./img/banner02.png" alt="배너 디자인"></a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#"><img src="./img/banner03.png" alt="배너 디자인"></a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#"><img src="./img/banner04.png" alt="배너 디자인"></a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#"><img src="./img/banner04.png" alt="배너 디자인"></a>
-                                </div>
+            </div>
+        </section>
+        <section class="look_wrap container">
+            <h1>XEXYMIXX LOOKBOOK</h1>
+            <div class="swiper look_product_all">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide look_product">
+                        <a href="#"><img src="./img/look01.png" alt="룩북 상품 이미지"></a>
+                        <div class="txt">
+                            <div class="top">
+                                <a href="#" class="top_preview"><img src="./img/top01.png" alt="룩북 상의 이미지"></a>
+                                <a href="#" class="top_name">
+                                    <h2>TOP</h2>
+                                    <div class="name">
+                                        <p>HAVA CROPTOP DEUBERRYPINK</p>
+                                        <p>49,800</p>
+                                    </div>
+                                </a>
                             </div>
-                        </div>            
+                            <div class="line"></div>
+                            <div class="bottom">
+                                <a href="#" class="bottom_preview"><img src="./img/bottom01.png" alt="룩북 하의 이미지"></a>
+                                <a href="#" class="bottom_name">
+                                    <h2>BOTTOM</h2>
+                                    <div class="name">
+                                        <p>HAVA CROPTOP DEUBERRYPINK</p>
+                                        <p>88,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="swiper-slide sns_li">
-                    <div class="sns design" id="sns_sub">
-                        <h1>05 SNS DESIGN</h1>
-                        <div class="swiper sns_wrap design_wrap">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="#"><img src="./img/sns01.png" alt="sns 광고 디자인"></a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#"><img src="./img/sns02.png" alt="sns 광고 디자인"></a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#"><img src="./img/sns03.png" alt="sns 광고 디자인"></a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#"><img src="./img/sns04.png" alt="sns 광고 디자인"></a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#"><img src="./img/sns05.png" alt="sns 광고 디자인"></a>
-                                </div>
+                    <div class="swiper-slide look_product">
+                        <a href="#"><img src="./img/look02.png" alt="룩북 상품 이미지"></a>
+                        <div class="txt">
+                            <div class="top">
+                                <a href="#" class="top_preview"><img src="./img/top01.png" alt="룩북 상의 이미지"></a>
+                                <a href="#" class="top_name">
+                                    <h2>TOP</h2>
+                                    <div class="name">
+                                        <p>HAVA CROPTOP DEUBERRYPINK</p>
+                                        <p>49,800</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="line"></div>
+                            <div class="bottom">
+                                <a href="#" class="bottom_preview"><img src="./img/bottom01.png" alt="룩북 하의 이미지"></a>
+                                <a href="#" class="bottom_name">
+                                    <h2>BOTTOM</h2>
+                                    <div class="name">
+                                        <p>HAVA CROPTOP DEUBERRYPINK</p>
+                                        <p>88,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide look_product">
+                        <a href="#"><img src="./img/look03.png" alt="룩북 상품 이미지"></a>
+                        <div class="txt">
+                            <div class="top">
+                                <a href="#" class="top_preview"><img src="./img/top01.png" alt="룩북 상의 이미지"></a>
+                                <a href="#" class="top_name">
+                                    <h2>TOP</h2>
+                                    <div class="name">
+                                        <p>HAVA CROPTOP DEUBERRYPINK</p>
+                                        <p>49,800</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="line"></div>
+                            <div class="bottom">
+                                <a href="#" class="bottom_preview"><img src="./img/bottom01.png" alt="룩북 하의 이미지"></a>
+                                <a href="#" class="bottom_name">
+                                    <h2>BOTTOM</h2>
+                                    <div class="name">
+                                        <p>HAVA CROPTOP DEUBERRYPINK</p>
+                                        <p>88,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide look_product">
+                        <a href="#"><img src="./img/look04.png" alt="룩북 상품 이미지"></a>
+                        <div class="txt">
+                            <div class="top">
+                                <a href="#" class="top_preview"><img src="./img/top01.png" alt="룩북 상의 이미지"></a>
+                                <a href="#" class="top_name">
+                                    <h2>TOP</h2>
+                                    <div class="name">
+                                        <p>HAVA CROPTOP DEUBERRYPINK</p>
+                                        <p>49,800</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="line"></div>
+                            <div class="bottom">
+                                <a href="#" class="bottom_preview"><img src="./img/bottom01.png" alt="룩북 하의 이미지"></a>
+                                <a href="#" class="bottom_name">
+                                    <h2>BOTTOM</h2>
+                                    <div class="name">
+                                        <p>HAVA CROPTOP DEUBERRYPINK</p>
+                                        <p>88,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide look_product">
+                        <a href="#"><img src="./img/look05.png" alt="룩북 상품 이미지"></a>
+                        <div class="txt">
+                            <div class="top">
+                                <a href="#" class="top_preview"><img src="./img/top01.png" alt="룩북 상의 이미지"></a>
+                                <a href="#" class="top_name">
+                                    <h2>TOP</h2>
+                                    <div class="name">
+                                        <p>HAVA CROPTOP DEUBERRYPINK</p>
+                                        <p>49,800</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="line"></div>
+                            <div class="bottom">
+                                <a href="#" class="bottom_preview"><img src="./img/bottom01.png" alt="룩북 하의 이미지"></a>
+                                <a href="#" class="bottom_name">
+                                    <h2>BOTTOM</h2>
+                                    <div class="name">
+                                        <p>HAVA CROPTOP DEUBERRYPINK</p>
+                                        <p>88,000</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide look_product">
+                        <a href="#"><img src="./img/look06.png" alt="룩북 상품 이미지"></a>
+                        <div class="txt">
+                            <div class="top">
+                                <a href="#" class="top_preview"><img src="./img/top01.png" alt="룩북 상의 이미지"></a>
+                                <a href="#" class="top_name">
+                                    <h2>TOP</h2>
+                                    <div class="name">
+                                        <p>HAVA CROPTOP DEUBERRYPINK</p>
+                                        <p>49,800</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="line"></div>
+                            <div class="bottom">
+                                <a href="#" class="bottom_preview"><img src="./img/bottom01.png" alt="룩북 하의 이미지"></a>
+                                <a href="#" class="bottom_name">
+                                    <h2>BOTTOM</h2>
+                                    <div class="name">
+                                        <p>HAVA CROPTOP DEUBERRYPINK</p>
+                                        <p>88,000</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-<!--                 <div class="swiper-slide footer_li">
-                    <p>THANK YOU FOR WATCHING</p>
-                </div> -->
+            </div>
+        </section>
+        <section class="movie_wrap">
+            <h1>XEXYMIXX MOVIE</h1>
+            <div class="video_wrap">
+                <video src="./img/movie03.mp4" autoplay controls muted width="1260" type="video/mp4"></video>
+                <a href="#"><img src="./img/youtube.png" alt=""></a>
+            </div>
+        </section>
+        <section class="banner_wrap">
+            <div class="banner_top"></div>
+            <div class="banner_bottom"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="f_top">
+            <div class="f_top_left">
+                <h1><img src="./img/logo02.png" alt=""></h1>
+                <ul class="info">
+                    <li>사업자   주식회사 브랜드엑스코퍼레이션   |   대표자   이수연 강민준   |   팩스   02-2179-9410</li>
+                    <li>주소   서울시 성동구 뚝섬로1길 63 영창디지탈타워 B2F,4F,6F,12F,16F   |   대표전화   1661-2811</li>
+                    <li>반품주소지   경기도 의정부시 산단로98번길 65 303호 젝시믹스</li>
+                    <li>사업자등록번호   550-86-00867 [사업자정보확인]   |   통신판매업신고번호   2019-서울성동-01148</li>
+                    <li>반품주소지   경기도 의정부시 산단로98번길 65 303호 젝시믹스</li>
+                    <li>개인정보보호책임자   강교혁 (asitakak@brandxcorp.com)   |   온라인광고   brxmkt@brandxcorp.com</li>
+                    <li>외부몰입점&단체구매   xexymix_online@brandxcorp.com   |   매장문의   brxoffline@brandxcorp.com</li>
+                </ul>
+            </div>
+            <div class="f_top_right">
+                <ul class="bank">
+                    <li class="title">BANK</li>
+                    <li>우리은행   1005-703-294024</li>
+                    <li>국민은행   431801-01-213327</li>
+                    <li>농협   301-0259-9190-41</li>
+                    <li>(주)브랜드엑스코퍼레이션</li>
+                </ul>
+                <ul class="menu">
+                    <li class="title">MENU</li>
+                    <li>공지사항</li>
+                    <li>회원정책</li>
+                    <li>전국매장안내</li>
+                    <li>강사회원</li>
+                    <li>기업회원</li>
+                    <li>단체구매문의</li>
+                </ul>
+                <ul class="customer">
+                    <li class="title">1661-2811</li>
+                    <li>평일  10:00 - 17:00</li>
+                    <li>점심  12:30 - 14:00</li>
+                    <li>휴일  토/일/공휴일</li>
+                </ul>
+            </div>
+            <div class="bar"></div>
+        </div>
+        <div class="f_bottom">
+            <div class="f_bottom_left">
+                <ul class="privacy">
+                    <li>회사소개 |</li>
+                    <li>이용약관 |</li>
+                    <li class="privacy_link"><a href="#">개인정보처리방침 |</a></li>
+                    <li>고객센터 |</li>
+                </ul>
+            </div>
+            <div class="f_bottom_right">
+                <ul class="sns">
+                    <li><a href="#"><img src="./img/sns01.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/sns02.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/sns03.png" alt=""></a></li>
+                </ul>
             </div>
         </div>
-    </main>
+    </footer>
 </body>
 </html>
